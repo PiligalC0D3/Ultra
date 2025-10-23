@@ -1,140 +1,38 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="pt-BR">
 <head>
-  <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width,initial-scale=1" />
-  <title>Ative o modo Ultra — Landing</title>
-  <link rel="stylesheet" href="style.css" />
-  <meta name="description" content="Academia Ultra - Plano Gold Pró R$9,90. Matricule-se agora!" />
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  <title>Ultra Academia</title>
 </head>
 <body>
-  <!-- Top / Hero -->
-  <header class="hero" id="home">
-    <div class="hero-inner">
-      <div class="hero-text">
-        <img class="logo" src="assets/logo-placeholder.png" alt="Logo Ultra (substitua)" />
-        <h1>Ative o modo Ultra</h1>
-        <p class="subtitle">A atitude que faz o seu treino ser top</p>
-        <div class="hero-ctas">
-          <a class="btn primary" href="#form">Matricule-se</a>
-          <a class="btn outline" id="btn-whatsapp-hero" href="#">Quero saber no WhatsApp</a>
-        </div>
-      </div>
+  
+logo e nome da academia e ao lado logo de 24 horas
 
-      <div class="hero-image">
-        <!-- Substitua pela imagem real (caminho: assets/dosite.jfif) -->
-        <img src="assets/dosite.jfif" alt="Pessoa treinando" />
-      </div>
-    </div>
-  </header>
+<img src="logo-ultra-academia.png" alt="Logo Ultra Academia" style="height: 100px; vertical-align: middle;">3
+<img src="logo-24-horas.png" alt="Logo 24 Horas" style="height: 100px; vertical-align: middle; margin-left: 20px;">
+<img src="mulher.png" alt="imagem mulher e titulo">
+<h1>Ative o modo Ultra</h1>
 
-  <!-- Oferta -->
-  <section class="offer">
-    <div class="offer-card">
+
+<section>
+    <div>
       <small>PLANO GOLDPRÓ</small>
-      <div class="price">
-        <span class="currency">R$</span>
-        <span class="value">9,90</span>
-      </div>
-      <p class="offer-note">30 primeiros dias • Sem taxa de matrícula</p>
-      <a class="btn primary large" href="#form">Matricule-se</a>
+        <span class="cifrao">R$</span>
+        <span class="valor">9,90</span>
+        <p>SEM TAXA DE MATRÍCULA</p>
+        <a href="#" class="btn-matricula">MATRÍCULA-SE</a>
     </div>
-  </section>
+</section>
+<section>
+    <h2>MOTIVOS PARA TREINAR NA ULTRA</h2>
 
-  <!-- Benefícios -->
-  <section class="benefits">
-    <h2>Motivos para treinar na Ultra</h2>
-    <div class="benefit-list">
-      <div class="benefit">
-        <strong>24 horas</strong>
-        <span>Funcionamento 24h</span>
-      </div>
-      <div class="benefit">
-        <strong>+200</strong>
-        <span>Aulas coletivas</span>
-      </div>
-      <div class="benefit">
-        <strong>Ambiente</strong>
-        <span>Climatizado</span>
-      </div>
-      <div class="benefit">
-        <strong>Estacionamento</strong>
-        <span>Amplo</span>
-      </div>
-    </div>
-  </section>
-
-  <!-- Localização / Mapa -->
-  <section class="location">
-    <h2>Onde estamos</h2>
-    <div class="location-row">
-      <div class="location-info">
-        <p class="address">R. Guarulhas, 51 - Jardim das Américas, Cuiabá - MT</p>
-        <p><small>Horário: Aberto 24 horas</small></p>
-      </div>
-      <div class="map">
-        <!-- Google Maps embed com busca por endereço (troque se quiser iframe oficial) -->
-        <iframe
-          loading="lazy"
-          src="https://maps.google.com/maps?q=R.%20Guarulhas%2051%20Jardim%20das%20Am%C3%A9ricas%20Cuiab%C3%A1%20MT&t=&z=15&ie=UTF8&iwloc=&output=embed"
-          aria-label="Mapa - Ultra Jardim das Américas"></iframe>
-      </div>
-    </div>
-  </section>
-
-  <!-- Formulário -->
-  <section class="form-section" id="form">
-    <h2>Preencha o formulário e vem ser Ultra!</h2>
-    <form id="leadForm" class="lead-form" action="#" novalidate>
-      <label>
-        Nome
-        <input type="text" name="name" id="name" required placeholder="Digite seu nome" />
-      </label>
-
-      <label>
-        E-mail
-        <input type="email" name="email" id="email" required placeholder="Digite seu e-mail" />
-      </label>
-
-      <label>
-        WhatsApp
-        <input type="tel" name="whatsapp" id="whatsapp" required placeholder="(99) 9 9999-9999" />
-      </label>
-
-      <div class="form-actions">
-        <button type="submit" class="btn primary large">Quero ser Ultra</button>
-        <button type="button" class="btn outline" id="btn-cta-whatsapp">Falar via WhatsApp</button>
-      </div>
-
-      <p class="form-helper">Ao enviar, você será direcionado ao WhatsApp com uma mensagem pronta.</p>
-    </form>
-  </section>
-
-  <!-- Gallery / imagens equipamentos (placeholder) -->
-  <section class="gallery">
-    <h2>Estrutura</h2>
-    <div class="gallery-grid">
-      <img src="assets/gym1.jpg" alt="Academia 1 (substitua)" />
-      <img src="assets/gym2.jpg" alt="Academia 2 (substitua)" />
-      <img src="assets/gym3.jpg" alt="Academia 3 (substitua)" />
-    </div>
-  </section>
-
-  <!-- Final CTA -->
-  <footer class="final-cta">
-    <h3>Tá esperando o que pra começar? Vamos lá!</h3>
-    <div class="footer-ctas">
-      <a class="btn primary large" href="#form">Matricule-se</a>
-      <a class="btn outline" id="footer-whats" href="#">Atendimento via WhatsApp</a>
-    </div>
-    <p class="foot-note">© <span id="year"></span> Academia Ultra — Todos os direitos.</p>
-  </footer>
-
-  <!-- Floating WhatsApp -->
-  <a id="whatsapp-float" href="#" aria-label="Abrir WhatsApp">
-    <img src="assets/whatsapp-icon.png" alt="WhatsApp" />
-  </a>
-
-  <script src="script.js"></script>
+</section>
+    
+<section>
+  <img src="academia.img" alt="imagem da academia">
+</section>
+      
 </body>
 </html>
