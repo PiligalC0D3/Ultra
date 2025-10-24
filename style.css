@@ -3,3 +3,220 @@
 body {
   background-color: #ff69b4;
 }
+
+/* Reset e estilo base */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", Arial, sans-serif;
+}
+
+body {
+  background-color: #4b2437;
+  color: #fff;
+  text-align: center;
+  line-height: 1.6;
+  overflow-x: hidden;
+  padding: 20px;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+  margin: 10px auto;
+}
+
+h1, h2, h3, h4 {
+  margin: 20px 0;
+  font-weight: 700;
+}
+
+h1 {
+  color: #ff004c;
+  font-size: 2.5rem;
+}
+
+h2 {
+  color: #ffae00;
+  font-size: 1.8rem;
+}
+
+h3, h4 {
+  color: #ccc;
+}
+
+section {
+  margin: 40px auto;
+  padding: 20px;
+  max-width: 1000px;
+  background: rgba(255, 255, 255, 0.05);
+  border-radius: 10px;
+  box-shadow: 0 0 20px rgba(255, 0, 76, 0.1);
+}
+
+/* Plano destaque */
+section div small {
+  display: block;
+  font-size: 1rem;
+  color: #ffae00;
+  letter-spacing: 1px;
+  margin-bottom: 10px;
+}
+
+.cifrao {
+  font-size: 1.5rem;
+  vertical-align: top;
+}
+
+.valor {
+  font-size: 3rem;
+  font-weight: bold;
+  color: #00eaff;
+}
+
+section p {
+  margin: 10px 0;
+  font-size: 1.1rem;
+}
+
+.btn-matricula {
+  display: inline-block;
+  padding: 12px 24px;
+  background: #ff004c;
+  color: #fff;
+  text-decoration: none;
+  border-radius: 30px;
+  margin-top: 15px;
+  font-weight: bold;
+  transition: 0.3s;
+}
+
+.btn-matricula:hover {
+  background: #ffae00;
+  color: #000;
+}
+
+/* Formulário */
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  margin-top: 15px;
+}
+
+form input {
+  padding: 12px;
+  border: none;
+  border-radius: 8px;
+  font-size: 1rem;
+  outline: none;
+}
+
+form button {
+  padding: 14px;
+  background: #00eaff;
+  color: #000;
+  font-weight: bold;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+form button:hover {
+  background: #ff004c;
+  color: #fff;
+}
+
+/* Botão flutuante WhatsApp */
+section:last-of-type {
+  position: relative;
+}
+
+section:last-of-type button {
+  background: #25d366;
+  color: #fff;
+  font-size: 1rem;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 50px;
+  cursor: pointer;
+  margin-top: 15px;
+}
+
+section:last-of-type img {
+  width: 60px;
+  position: fixed;
+  bottom: 25px;
+  right: 25px;
+  background: #25d366;
+  border-radius: 50%;
+  padding: 10px;
+  box-shadow: 0 0 15px rgba(10, 190, 40, 0.5);
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+section:last-of-type img:hover {
+  transform: scale(1.1);
+}
+
+/* Responsividade */
+@media (max-width: 768px) {
+  h1 {
+    font-size: 2rem;
+  }
+
+  h2 {
+    font-size: 1.5rem;
+  }
+
+  section {
+    padding: 15px;
+  }
+
+  .valor {
+    font-size: 2.5rem;
+  }
+
+  form input, form button {
+    font-size: 1rem;
+  }
+
+  img[alt="Logo Ultra Academia"],
+  img[alt="Logo 24 Horas"] {
+    display: inline-block;
+    height: 70px !important;
+    margin: 10px;
+  }
+}
+
+@media (max-width: 480px) {
+  h1 {
+    font-size: 1.6rem;
+  }
+
+  h2 {
+    font-size: 1.3rem;
+  }
+
+  .valor {
+    font-size: 2rem;
+  }
+
+  section {
+    margin: 20px auto;
+    padding: 10px;
+  }
+
+  .btn-matricula {
+    width: 100%;
+  }
+
+  img[alt="Logo Ultra Academia"],
+  img[alt="Logo 24 Horas"] {
+    height: 60px !important;
+  }
+}
