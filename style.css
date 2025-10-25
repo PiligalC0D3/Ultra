@@ -22,10 +22,10 @@ body {
 }
 
 img {
-  max-width: 100%;
+  max-width: 112%;
   height: auto;
   display: block;
-  margin: 10px auto;
+  margin: -20px;
 }
 
 h1, h2, h3, h4 {
