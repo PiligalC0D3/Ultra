@@ -25,7 +25,7 @@ img {
   max-width: 112%;
   height: auto;
   display: block;
-  margin: -20px;
+  margin: -20px auto;
 }
 
 h1, h2, h3, h4 {
