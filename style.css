@@ -1,95 +1,102 @@
-
-
-body {
-  background-color: #ff69b4;
-}
-
-/* Reset e estilo base */
+/* ===== Reset e base ===== */
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: "Poppins", Arial, sans-serif;
+  font-family: "Poppins", sans-serif;
 }
 
 body {
-  background-color: #4b2437;
+  background-color: #c2338f;
   color: #fff;
   text-align: center;
   line-height: 1.6;
   overflow-x: hidden;
-  padding: 20px;
 }
 
-img {
-  max-width: 112%;
-  height: auto;
-  display: block;
-  margin: -20px auto;
+/* ===== Cabeçalho ===== */
+.topo {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+  padding: 20px 0;
 }
 
-h1, h2, h3, h4 {
-  margin: 20px 0;
-  font-weight: 700;
+.logo {
+  height: 90px;
 }
 
-h1 {
-  color: #ff004c;
-  font-size: 2.5rem;
+/* ===== Hero ===== */
+.hero{
+  text-align: center;
 }
 
-h2 {
-  color: #ffae00;
-  font-size: 1.8rem;
+.hero-img {
+  width: 100%;
+  border-radius: 0;
 }
 
-h3, h4 {
-  color: #ccc;
+.hero h1 {
+  font-size: 2rem;
+  margin-top: 10px;
+  text-transform: uppercase;
 }
 
-section {
-  margin: 40px auto;
-  padding: 20px;
-  max-width: 1000px;
-  background: rgba(255, 255, 255, 0.05);
-  border-radius: 10px;
-  box-shadow: 0 0 20px rgba(255, 0, 76, 0.1);
-}
-
-/* Plano destaque */
-section div small {
-  display: block;
+.hero span {
+  color: #fff;
+  font-weight: 400;
   font-size: 1rem;
-  color: #ffae00;
-  letter-spacing: 1px;
-  margin-bottom: 10px;
 }
 
-.cifrao {
+.hero p {
+  font-size: 1rem;
+  color: #fff;
+  margin-bottom: 20px;
+}
+
+/* ===== Plano ===== */
+.plano {
+  background: #ff4da6;
+  margin: 30px auto;
+  padding: 30px;
+  border-radius: 20px;
+  width: 85%;
+}
+
+.plano small {
+  color: #fff;
+  letter-spacing: 1px;
+}
+
+.plano .cifrao {
   font-size: 1.5rem;
   vertical-align: top;
 }
 
-.valor {
-  font-size: 3rem;
-  font-weight: bold;
-  color: #00eaff;
+.plano h2 {
+  font-size: 4rem;
+  font-weight: 800;
+  margin: 10px 0;
 }
 
-section p {
-  margin: 10px 0;
-  font-size: 1.1rem;
+.plano p {
+  font-size: 1rem;
+}
+
+.sem-taxa {
+  font-weight: 700;
 }
 
 .btn-matricula {
   display: inline-block;
-  padding: 12px 24px;
-  background: #ff004c;
-  color: #fff;
-  text-decoration: none;
-  border-radius: 30px;
-  margin-top: 15px;
+  background: #fff;
+  color: #e93080;
   font-weight: bold;
+  padding: 12px 24px;
+  border-radius: 50px;
+  margin-top: 15px;
+  text-decoration: none;
   transition: 0.3s;
 }
 
@@ -98,125 +105,161 @@ section p {
   color: #000;
 }
 
-/* Formulário */
-form {
+.imagem-academia img {
+  width: 100%;
+  border-radius: 0;
   display: flex;
-  flex-direction: column;
-  gap: 12px;
+}
+
+/* ===== Motivos ===== */
+.motivos {
+  margin: 40px auto;
+  width: 85%;
+}
+
+.motivos h2 {
+  margin-bottom: 15px;
+}
+
+.icones p {
+  font-size: 1rem;
+  margin: 5px 0;
+}
+
+/* ===== Localização ===== */
+.local {
+  width: 90%;
+  margin: 40px auto;
+}
+
+.local img {
+  width: 100%;
+  border-radius: 15px;
   margin-top: 15px;
 }
 
-form input {
+/* ===== Formulário ===== */
+.formulario {
+  width: 85%;
+  background: #ff4da6;
+  margin: 30px auto;
+  padding: 25px;
+  border-radius: 20px;
+}
+
+.formulario input {
+  width: 100%;
   padding: 12px;
   border: none;
-  border-radius: 8px;
+  border-radius: 30px;
+  margin: 10px 0;
   font-size: 1rem;
-  outline: none;
+  text-align: center;
 }
 
-form button {
-  padding: 14px;
-  background: #00eaff;
-  color: #000;
-  font-weight: bold;
+.formulario button {
+  background: #fff;
+  color: #e93080;
   border: none;
-  border-radius: 8px;
+  padding: 14px;
+  border-radius: 50px;
+  font-weight: bold;
   cursor: pointer;
   transition: 0.3s;
+  width: 100%;
 }
 
-form button:hover {
-  background: #ff004c;
-  color: #fff;
+.formulario button:hover {
+  background: #ffae00;
+  color: #000;
 }
 
-/* Botão flutuante WhatsApp */
-section:last-of-type {
-  position: relative;
+/* ===== Estrutura ===== */
+.estrutura {
+  margin: 40px auto;
+  width: 90%;
 }
 
-section:last-of-type button {
+.estrutura img {
+  width: 100%;
+  border-radius: 15px;
+  margin: 10px 0;
+}
+
+.whatsapp-container {
+  margin-top: 10px;
+}
+
+.btn-whatsapp {
   background: #25d366;
   color: #fff;
-  font-size: 1rem;
-  padding: 12px 20px;
   border: none;
+  padding: 12px 24px;
   border-radius: 50px;
+  font-weight: bold;
   cursor: pointer;
-  margin-top: 15px;
 }
 
-section:last-of-type img {
+.whatsapp-icon {
   width: 60px;
+  background: #25d366;
+  border-radius: 50%;
+  padding: 10px;
+  margin-top: 10px;
+}
+
+/* ===== Final ===== */
+.final {
+  margin: 40px auto;
+  width: 85%;
+}
+
+.final h1 {
+  font-size: 1.8rem;
+  line-height: 1.3;
+}
+
+.final h3 span {
+  color: #ffae00;
+  font-weight: 700;
+}
+
+/* ===== WhatsApp Flutuante ===== */
+.whatsapp-float {
   position: fixed;
   bottom: 25px;
   right: 25px;
+  z-index: 999;
+}
+
+.whatsapp-float img {
+  width: 65px;
   background: #25d366;
   border-radius: 50%;
   padding: 10px;
   box-shadow: 0 0 15px rgba(10, 190, 40, 0.5);
-  cursor: pointer;
   transition: 0.3s;
 }
 
-section:last-of-type img:hover {
+.whatsapp-float img:hover {
   transform: scale(1.1);
 }
 
-/* Responsividade */
+/* ===== Responsividade ===== */
 @media (max-width: 768px) {
-  h1 {
-    font-size: 2rem;
-  }
-
-  h2 {
-    font-size: 1.5rem;
-  }
-
-  section {
-    padding: 15px;
-  }
-
-  .valor {
-    font-size: 2.5rem;
-  }
-
-  form input, form button {
-    font-size: 1rem;
-  }
-
-  img[alt="Logo Ultra Academia"],
-  img[alt="Logo 24 Horas"] {
-    display: inline-block;
-    height: 70px !important;
-    margin: 10px;
-  }
-}
-
-@media (max-width: 480px) {
-  h1 {
+  .hero h1 {
     font-size: 1.6rem;
   }
 
-  h2 {
-    font-size: 1.3rem;
+  .plano h2 {
+    font-size: 3rem;
   }
 
-  .valor {
-    font-size: 2rem;
-  }
-
-  section {
-    margin: 20px auto;
-    padding: 10px;
-  }
-
-  .btn-matricula {
-    width: 100%;
-  }
-
-  img[alt="Logo Ultra Academia"],
-  img[alt="Logo 24 Horas"] {
-    height: 60px !important;
+  .final h1 {
+    font-size: 1.4rem;
   }
 }
+
+
+/* ===== Estilização adicional ===== */
+

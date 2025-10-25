@@ -3,69 +3,86 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="style.css">
   <title>Ultra Academia</title>
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
+
+  <!-- Cabeçalho com Logos -->
+  <header class="topo">
+    <img src="img/logoUltra.PNG" alt="Logo Ultra Academia" class="logo">
+    <img src="logo-24-horas.png" alt="Logo 24 Horas" class="logo">
+  </header>
+
+  <!-- Seção principal -->
+  <section class="hero">
+    <img src="img/Fernanda.png" alt="Mulher sorrindo na academia" class="hero-img">
   
+  </section>
 
-<img src="logo-ultra-academia.png" alt="Logo Ultra Academia" style="height: 100px; vertical-align: middle;">
-<img src="logo-24-horas.png" alt="Logo 24 Horas" style="height: 100px; vertical-align: middle; margin-left: 20px;"><p>
+  <!-- Plano Goldpró -->
+  <section class="plano">
+    <small>PLANO GOLDPRÓ</small>
+    <h2><span class="cifrao">R$</span>9,90</h2>
+    <p>AO MÊS NO PLANO ANUAL</p>
+    <p class="sem-taxa">SEM TAXA DE MATRÍCULA</p>
+    <a href="#" class="btn-matricula">MATRICULE-SE</a>
+  </section>
 
-<img src="img/Fernanda.png" alt="imagem mulher e titulo" >
-<h1>Ative o modo Ultra</h1>
-
-
-<section>
-    <div>
-      <small>PLANO GOLDPRÓ</small>
-        <span class="cifrao">R$</span>
-        <span class="valor">9,90</span>
-        <p>SEM TAXA DE MATRÍCULA</p>
-        <a href="#" class="btn-matricula">MATRÍCULA-SE</a>
-    </div>
-</section>
-<section>
+  <!-- Motivos -->
+  <section class="motivos">
     <h2>MOTIVOS PARA TREINAR NA ULTRA</h2>
-
-</section>
-    
-<section>
-  <img src="img/academia.JPG" alt="imagem da academia">
-
-    <section>
-    <div>
-       <h3>ONDE ESTAMOS</h3>
-      <p>Estamos localizados em um ponto estratégico da cidade, com fácil acesso e estacionamento gratuito para nossos alunos.</p>
+    <div class="icones">
+      <p>🏋️‍♀️ UNIDADE 24 HORAS</p>
+      <p>❄️ AMBIENTE CLIMATIZADO</p>
+      <p>💪 + DE 200 AULAS COLETIVAS</p>
+      <p>🅿️ ESTACIONAMENTO AMPLO</p>
     </div>
-      </section>
+  </section>
 
-  <section>
-    <div>
-      <h2> PREENCHA O FORMULARIO E VEM SER ULTRA !</h2>
-      <form>
-        <input type="text" placeholder="Digite seu Nome" required>
-        <input type="email" placeholder="Digite seu Email" required>
-        <input type="tel" placeholder="Digite seu Whatsapp" required>
-        <button type="submit">QUERO SER ULTRA</button>
+  <section class="imagem-academia">
+    <img src="img/fotoAcademia.JPG" alt="Interior da academia">
+  </section>
+
+  <!-- Localização -->
+  <section class="local">
+    <h2>ONDE ESTAMOS</h2>
+    <p>📍 R. Guadalajara, 51 – Jardim das Américas, Cuiabá - MT</p>
+  </section>
+
+  <!-- Formulário -->
+  <section class="formulario">
+    <h2>PREENCHA O FORMULÁRIO E VEM SER ULTRA!</h2>
+    <form>
+      <input type="text" placeholder="Digite seu nome" required>
+      <input type="email" placeholder="Digite seu e-mail" required>
+      <input type="tel" placeholder="Digite seu WhatsApp" required>
+      <button type="submit">QUERO SER ULTRA</button>
+    </form>
+  </section>
+
+  <!-- Estrutura -->
+  <section class="estrutura">
+    <img src="img/aparelhosAcademia.JPG" alt="Academia Ultra">
+    <h3>AMBIENTE CLIMATIZADO</h3>
+    <div class="whatsapp-container">
+      <button class="btn-whatsapp">ATENDIMENTO VIA WHATSAPP</button>
+      <img src="img/jojo.png" alt="Ícone WhatsApp" class="whatsapp-icon">
     </div>
-
-</section>
-<img src="img/ultraAcademia.png" alt="imagem de treino">
-
-<h3>AMBIENTE CLIMATIZADO</h3>
+    <h4>ENTRADA POR RECONHECIMENTO FACIAL</h4>
   </section>
-<section>
-  <h2>FLUTUANTE</h2>
-  <button type="submit">ATENDIMENTO VIA WHATSAPP</button>
-  </section>
-  <img src="img/jojo.png" alt="icone whatsapp">
-  <h4>ENTRADA POR RECONHECIMENTO FACIAL</h4>
 
-  <h1> Tá esperando o quê para começar? Vamos lá!</h1>
-  <h3>Aproveite a condição especial de inauguração:Taxa Zero!</h3>
-  <button type="submit">matricula-se</button>
-</section>
-      
+  <!-- Final -->
+  <section class="final">
+    <h1>Tá esperando o quê pra começar?<br>Vamos lá!</h1>
+    <h3>Aproveite a condição especial de inauguração: <span>taxa zero!</span></h3>
+    <a href="#" class="btn-matricula">MATRICULE-SE</a>
+  </section>
+
+  <!-- Botão Flutuante WhatsApp -->
+  <a href="https://wa.me/SEUNUMERO" target="_blank" class="whatsapp-float">
+    <img src="img/jojo.png" alt="WhatsApp">
+  </a>
+
 </body>
 </html>
