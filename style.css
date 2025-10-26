@@ -63,6 +63,14 @@ body {
   margin-bottom: 20px;
 }
 
+/* ===== Imagem Ative ===== */
+.ative {
+  position: absolute;
+  width: 118px;
+  top: 253px;
+  right: 148px;
+}
+
 /* ===== Plano ===== */
 .plano {
   background: #ff4da6;
