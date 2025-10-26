@@ -209,10 +209,18 @@ body {
   margin: 10px 0;
 }
 
-.condicionado {
-  width: 50%;
+.ar {
+  width: 6% !important;
   height: auto;
+  margin-right: 10px
 }
+
+.ambientAr {
+  display: flex;
+  font-size: 1rem;
+  vertical-align: middle;
+  color: #fff;
+  font-weight: 600;
 
 /* ===== WhatsApp ===== */
 .whatsapp-button,
@@ -325,11 +333,13 @@ body {
   }
 
   .estrutura img {
-    width: 90%;
+    width: 100%;
   }
 
-  .condicionado {
-    width: 40%;
+  .ar {
+    width: 6% !important;
+    height: auto;
+
   }
 
   .final {
@@ -413,11 +423,13 @@ body {
   }
 
   .estrutura img {
-    width: 80%;
+    width: 100%;
+    display: flex;
   }
 
-  .condicionado {
-    width: 30%;
+  .ar {
+    width: 2% !important;
+    height: auto;
   }
 
   .final {
