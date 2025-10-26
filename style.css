@@ -8,7 +8,7 @@
 
 @font-face {
   font-family: "MinhaFonte";
-  src: url("fonts/Gotham\ Narrow\ Ultra.otf") format("truetype");
+  src: url("fonts/Gotham Narrow Ultra.otf") format("truetype");
   font-weight: normal;
   font-style: normal;
 }
@@ -212,7 +212,7 @@ body {
 .ar {
   width: 6% !important;
   height: auto;
-  margin-right: 10px
+  margin-right: 10px;
 }
 
 .ambientAr {
@@ -221,6 +221,7 @@ body {
   vertical-align: middle;
   color: #fff;
   font-weight: 600;
+}
 
 /* ===== WhatsApp ===== */
 .whatsapp-button,
@@ -263,9 +264,10 @@ body {
   font-weight: 700;
 }
 
+/* ===== Footer ===== */
 .footer {
   width: 100%;
-  background-color: #ff4da6; /* cor escura combinando com o site */
+  background-color: #ff4da6;
   color: #fff;
   text-align: center;
   padding: 20px 10px;
@@ -339,7 +341,6 @@ body {
   .ar {
     width: 6% !important;
     height: auto;
-
   }
 
   .final {
@@ -348,27 +349,12 @@ body {
 
   .final h1 {
     font-size: 2rem;
-  } 
+  }
 
   .footer {
     padding: 25px 20px;
     font-size: 1rem;
   }
-  footer {
-  width: 100%;
-  background-color: #ff4da6; /* cor escura combinando com o site */
-  color: #fff;
-  text-align: center;
-  padding: 20px 10px;
-  font-size: 0.9rem;
-  margin-top: 40px;
-}
-
-.footer span {
-  color: #ffae00;
-  font-weight: 700;
-}
-
 }
 
 /* Desktop grande */
@@ -439,10 +425,9 @@ body {
   .final h1 {
     font-size: 2.5rem;
   }
+
   .footer {
     padding: 30px 40px;
     font-size: 1.1rem;
   }
-
-
 }
