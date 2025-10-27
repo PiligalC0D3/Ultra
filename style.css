@@ -218,24 +218,19 @@ body {
 }
 
 .reconhecimento{ 
-  width: 20px;
-  margin-top: 10px;
+  width: 256px !important; 
+  margin-top: -29px !important;
+  margin-left: -116px !important;
 }
 
 
-.ar {
-  width: 6% !important;
-  height: auto;
-  margin-right: 10px;
-}
-
-.ambientAr {
+.climatizado {
   display: flex;
-  font-size: 1rem;
-  vertical-align: middle;
-  color: #fff;
-  font-weight: 600;
+  width: 43% !important;
+  margin-left: 6% !important;
+  margin-top: 18px !important;
 }
+
 
 /* ===== WhatsApp ===== */
 .whatsapp-button,
