@@ -191,6 +191,12 @@ body {
   padding: 25px;
   border-radius: 20px;
   position: relative;
+  transition:transform 0.4s;
+}
+  
+.formulario:hover {
+  box-shadow: 0 0 25px rgba(255, 77, 166, 0.5);
+  transform: scale(1.02);
 }
 
 .formulario input {
@@ -233,7 +239,9 @@ body {
 .estrutura img {
   width: 100%;
   margin: 10px 0;
+  transition: transform 0.5s ease;
 }
+
 
 .reconhecimento{ 
   width: 256px !important; 
@@ -266,13 +274,13 @@ body {
   width: 65px;
   border-radius: 50%;
   padding: 10px;
-  box-shadow: 0 0 15px rgba(10, 190, 40, 0.5);
+  box-shadow: 0 0 15px rgba(10, 190, 40, 0.4);
   transition: 0.3s;
 }
 
 .whatsapp-button img:hover,
 .whatsapp-float img:hover {
-  transform: scale(1.1);
+  transform: scale(1.1)rotate(10deg);
 }
 
 /* ===== Final ===== */
@@ -284,6 +292,7 @@ body {
 .final h1 {
   font-size: 1.8rem;
   line-height: 1.3;
+  animation: fadeInUp 1.2s ease forwards;
 }
 
 .final h3 span {
