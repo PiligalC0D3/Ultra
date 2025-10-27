@@ -111,31 +111,12 @@ body {
   padding: 30px;
   border-radius: 20px;
   width: 85%;
-  position: relative;
+  transition: transform 0.3s box-shadow 0.3s;
 }
 
-.plano small {
-  color: #fff;
-  letter-spacing: 1px;
-}
-
-.plano .cifrao {
-  font-size: 1.5rem;
-  vertical-align: top;
-}
-
-.plano h2 {
-  font-size: 4rem;
-  font-weight: 800;
-  margin: 10px 0;
-}
-
-.plano p {
-  font-size: 1rem;
-}
-
-.sem-taxa {
-  font-weight: 700;
+.preco-ultra:hover {
+  transform: scale(1.02);
+  box-shadow: 0 0 25px rgba(255, 77, 166, 0.5);
 }
 
 .btn-matricula,
@@ -147,7 +128,14 @@ body {
   padding: 12px 24px;
   border-radius: 50px;
   text-decoration: none;
-  transition: 0.3s;
+  transition: all 0.3s ease;
+  box-shadow: 0 0 10px rgba(255, 77, 166, 0.3);
+}
+
+.btn-matricula:hover
+.btn-matricula2:hover {
+  background: #fff;
+  color: #e93080;
 }
 
 .btn-matricula {
@@ -155,17 +143,6 @@ body {
   margin-top: -55px;
   margin-left: -78px;
 }
-
-.btn-matricula2 {
-  margin-top: 20px;
-}
-
-.btn-matricula:hover,
-.btn-matricula2:hover {
-  background: #ffae00;
-  color: #000;
-}
-
 .academia-img {
   width: 100%;
   border-radius: 0;
@@ -175,6 +152,12 @@ body {
 .motivos-img {
   margin: 40px auto;
   width: 90%;
+  transition: transform 0.4s box-shadow 0.3s;
+}
+
+.motivos-img:hover {
+  transform: scale(1.02);
+  box-shadow: 0 0 25px rgba(255, 77, 166, 0.5);
 }
 
 .motivos h2 {
