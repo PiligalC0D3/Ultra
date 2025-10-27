@@ -22,6 +22,21 @@ body {
   font-family: "Gotham", sans-serif;
 }
 
+/* ===== Animações globais ===== */
+.fade-in {
+  opacity: 0;
+  transform: translateY(30px);
+  animation: fadeInUp 1.2s ease forwards;
+}
+
+@keyframes fadeInUp {
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+
 /* ===== Cabeçalho ===== */
 .topo {
   display: flex;
@@ -29,27 +44,39 @@ body {
   align-items: center;
   gap: 20px;
   padding: 20px 0;
+  animation: fadeInUp 1s ease forwards;
 }
 
 .logo {
   height: 60px;
   margin-left: 77px;
+  transition: transform 0.4s;
+}
+
+.logo:hover {
+  transform: scale(1.1);
+  transition: 0.4s ease;
 }
 
 /* ===== Hero ===== */
 .hero {
+  text-align: relative;
   text-align: center;
+  overflow: hidden; /* Para garantir que a imagem não ultrapasse os limites do contêiner */
+  margin: 0 auto;
+  width: 100%;
+  
 }
 
 .hero-img {
   width: 100%;
   border-radius: 0;
+  animation: fadeInUp 1.2s ease forwards;
+  transition: transform 0.5s;
 }
 
-.hero h1 {
-  font-size: 2rem;
-  margin-top: 10px;
-  text-transform: uppercase;
+.hero-img:hover {
+  transform: scale(1.02);
 }
 
 .hero span {
@@ -58,18 +85,23 @@ body {
   font-size: 1rem;
 }
 
-.hero p {
-  font-size: 1rem;
-  color: #fff;
-  margin-bottom: 20px;
-}
-
 /* ===== Imagem Ative ===== */
-.ative {
+.ative {    /* Estilização da imagem "Ative-se" */
   position: absolute;
   width: 118px;
   top: 253px;
   right: 148px;
+  transform: translateY(-50%);
+  animation: float 3s ease-in-out infinite;
+}
+
+@keyframes float {
+  0%, 100% {
+    transform: translateY(-50%) translateY(0);
+  }
+  50% {
+    transform: translateY(-50%) translateY(-10px);
+  }
 }
 
 /* ===== Plano ===== */
