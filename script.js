@@ -17,3 +17,5 @@ next.addEventListener('click', () => showImage(index + 1));
 
 // Auto-play opcional
 setInterval(() => showImage(index + 1), 5000);
+
+
