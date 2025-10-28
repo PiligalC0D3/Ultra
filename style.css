@@ -51,9 +51,22 @@ body {
   height: 60px;
   margin-left: 77px;
   transition: transform 0.4s;
+  display: block;
 }
 
 .logo:hover {
+  transform: scale(1.1);
+  transition: 0.4s ease;
+}
+
+.logoUltra {
+  height: 60px;
+  margin-left: 50px;
+  transition: transform 0.4s;
+  display: block;
+}
+
+.logoUltra:hover {
   transform: scale(1.1);
   transition: 0.4s ease;
 }
