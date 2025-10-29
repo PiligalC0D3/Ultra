@@ -159,8 +159,9 @@ body {
   margin-left: -78px;
 }
 .academia-img {
-  width: 100%;
+  width: 117%;
   border-radius: 0;
+  clip-path:polygon(0 1%, 100% 18%, 105% 85%, 0 70%);
 }
 
 /* ===== Motivos ===== */
@@ -262,6 +263,15 @@ body {
   width: 256px !important; 
   margin-top: -29px !important;
   margin-left: -116px !important;
+
+}
+
+.facial {
+  width: 65px;
+  padding: 0px;
+  transition: 0.3s;
+  clip-path:polygon(0 25%, 100% 31%, 105% 82%, 0 70%);
+
 }
 
 
@@ -272,6 +282,11 @@ body {
   margin-top: -10px !important;
 }
 
+.vamos-ultra {
+  width: 335px;
+  margin-bottom: 10px;
+  margin-top: -59px;
+}
 
 /* ===== WhatsApp ===== */
 .whatsapp-button,
