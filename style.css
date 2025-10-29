@@ -49,7 +49,7 @@ body {
 
 .logo {
   height: 60px;
-  margin-left: 33px;
+  margin-left: 60px;
   transition: transform 0.4s;
   display: block;
 }
@@ -63,7 +63,7 @@ body {
   height: 65px;
   transition: transform 0.4s;
   display: block;
-  margin-left: 60px;
+  margin-left: 46px;
 }
 
 .logoUltra:hover {
@@ -103,8 +103,8 @@ body {
 /* ===== Imagem Ative ===== */
 .ative {    /* Estilização da imagem "Ative-se" */
   position: absolute;
-  width: 149px;
-  top: 334px;
+  width: 173px;
+  top: 333px;
   right: 148px;
   transform: translateY(-50%);
   animation: float 3s ease-in-out infinite;
