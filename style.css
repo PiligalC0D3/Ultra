@@ -40,16 +40,16 @@ body {
 /* ===== Cabeçalho ===== */
 .topo {
   display: flex;
-  justify-content: center;
+  
   align-items: center;
   gap: 20px;
-  padding: 20px 0;
+  padding: 19px 89px;
   animation: fadeInUp 1s ease forwards;
 }
 
 .logo {
   height: 60px;
-  margin-left: 77px;
+  margin-left: 33px;
   transition: transform 0.4s;
   display: block;
 }
@@ -60,10 +60,10 @@ body {
 }
 
 .logoUltra {
-  height: 60px;
-  margin-left: 50px;
+  height: 65px;
   transition: transform 0.4s;
   display: block;
+  margin-left: 60px;
 }
 
 .logoUltra:hover {
@@ -82,10 +82,12 @@ body {
 }
 
 .hero-img {
-  width: 100%;
+  width: 141%;
   border-radius: 0;
   animation: fadeInUp 1.2s ease forwards;
   transition: transform 0.5s;
+  margin-left:-100px;
+  clip-path:polygon(0 1%, 100% 18%, 105% 85%, 0 70%);
 }
 
 .hero-img:hover {
@@ -101,8 +103,8 @@ body {
 /* ===== Imagem Ative ===== */
 .ative {    /* Estilização da imagem "Ative-se" */
   position: absolute;
-  width: 118px;
-  top: 253px;
+  width: 149px;
+  top: 334px;
   right: 148px;
   transform: translateY(-50%);
   animation: float 3s ease-in-out infinite;
