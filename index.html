@@ -5,7 +5,9 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Ultra Academia</title>
   <link rel="stylesheet" href="style.css">
-  
+  <!-- AOS (Animate On Scroll) -->
+<link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
 </head>
 
 
@@ -13,37 +15,37 @@
 
   <!-- Cabeçalho com Logos -->
   <header class="topo">
-    <img src="img/loogo.png" alt="Logo Ultra Academia" class="logoUltra">
-    <img src="img/brancoOp24.png" alt="Logo 24 Horas" class="logo">
+    <img src="img/loogo.png" alt="Logo Ultra Academia" class="logoUltra" data-aos="fade-right">
+    <img src="img/brancoOp24.png" alt="Logo 24 Horas" class="logo" data-aos="fade-up">
   </header>
 
   <!-- Seção principal -->
   <section class="hero">
-    <img src="img/Fernanda.png" alt="Mulher sorrindo na academia" class="hero-img">
-    <img src="img/ative.png" alt="Minha imagem sem fundo" class="ative">
+    <img src="img/Fernanda.png" alt="Mulher sorrindo na academia" class="hero-img" data-aos="fade-right">
+    <img src="img/ative.png" alt="Minha imagem sem fundo" class="ative" data-aos="fade-right">
 
   
   </section>
 
   <!-- Plano Goldpró -->
   <section class="plano">
-    <img src="img/preco.png" alt="Preço ultra" class="preco-ultra">
+    <img src="img/preco.png" alt="Preço ultra" class="preco-ultra" data-aos="zoom-in">
   </section>
    <a href="#" class="btn-matricula">MATRICULE-SE</a>
 
   <!-- Motivos -->
   <section class="motivos">
-    <img src="img/motivos.png" alt="Motivos para escolher a Ultra Academia" class="motivos-img">
+    <img src="img/motivos.png" alt="Motivos para escolher a Ultra Academia" class="motivos-img" data-aos="fade-up">
     </div>
   </section>
 
   <section class="section-imagem-academia">
-    <img src="img/fotoAcademia.JPG" alt="Interior da academia" class="academia-img">
+    <img src="img/fotoAcademia.JPG" alt="Interior da academia" class="academia-img" data-aos="fade-right">
   </section>
 
   <!-- Localização -->
   <section class="local">
-    <img src="img/localizacao.png" alt="Localização da Ultra Academia" class="local-img">
+    <img src="img/localizacao.png" alt="Localização da Ultra Academia" class="local-img" data-aos="zoom-in">
   </section>
 
   <!-- Formulário -->
@@ -59,25 +61,27 @@
 
   <!-- Estrutura -->
   <section class="estrutura">
-    <img src="img/aparelhosAcademia.JPG" alt="Academia Ultra">
-    <img src="img/climatizado.png " alt="Ambiente climatizado" class="climatizado"> 
+    <img src="img/aparelhosAcademia.JPG" alt="Academia Ultra" data-aos="zoom-in">
+    <img src="img/climatizado.png " alt="Ambiente climatizado" class="climatizado" data-aos="fade-up"> 
     <div class="whatsapp-container">
       
     </div>
 
     <div>
-       <img src="img/facial.JPG" alt="foto-mulher" class="facial">
+       <img src="img/facial.JPG" alt="foto-mulher" class="facial" data-aos="fade-up">
     </div>
-    <img src="img/reconhecimento.png" class="reconhecimento">
+    <img src="img/reconhecimento.png" class="reconhecimento" data-aos="fade-right">
   </section>
 
   <!-- Final -->
   <section class="final">
-    <img src="/img/vamos.png" alt="Vamos ser Ultra Academia" class="vamos-ultra">
+    <img src="/img/vamos.png" alt="Vamos ser Ultra Academia" class="vamos-ultra" data-aos="zoom-in">
     <a href="#" class="btn-matricula2">MATRICULE-SE
       
     </a>
   </section>
+
+  
 
   <!-- Botão Flutuante WhatsApp -->
   <a href="https://wa.me/556593241568" class="whatsapp-button" target="_blank">
@@ -88,6 +92,15 @@
   <p>&copy; 2025 Ultra Academia. Todos os direitos reservados.</p>
   <p>Desenvolvido por: <span> <a href="https://gopublisee.com.br/">Go Publisee</a></span></p>
 </footer>
+
+<!-- Script do AOS -->
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+<script>
+  AOS.init({
+    duration: 1200, // duração da animação (ms)
+    once: true, // anima apenas uma vez
+  });
+</script>
 
 
 </body>
