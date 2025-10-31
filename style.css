@@ -82,12 +82,12 @@ body {
 }
 
 .hero-img {
-  width: 130%;
+  width: 149%;
   max-width: none;
   border-radius: 0;
   animation: fadeInUp 1.2s ease forwards;
   transition: transform 0.5s;
-  margin-left:-100px;
+  margin-left:-106px;
   clip-path:polygon(0 1%, 100% 18%, 105% 85%, 0 70%);
 }
 
@@ -104,9 +104,9 @@ body {
 /* ===== Imagem Ative ===== */
 .ative {    /* Estilização da imagem "Ative-se" */
   position: absolute;
-  width: 173px;
+  width: 187px;
   top: 333px;
-  right: 148px;
+  right: 114px;
   transform: translateY(-50%);
   animation: float 3s ease-in-out infinite;
 }
