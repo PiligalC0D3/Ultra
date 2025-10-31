@@ -82,13 +82,14 @@ body {
 }
 
 .hero-img {
-  width: 149%;
+  width: 128%;
   max-width: none;
   border-radius: 0;
   animation: fadeInUp 1.2s ease forwards;
   transition: transform 0.5s;
   margin-left:-106px;
-  clip-path:polygon(0 1%, 100% 18%, 105% 85%, 0 70%);
+  clip-path:polygon(0 12%, 100% 27%, 105% 76%, 0 57%);
+  margin-top: -122px;
 }
 
 .hero-img:hover {
@@ -105,7 +106,7 @@ body {
 .ative {    /* Estilização da imagem "Ative-se" */
   position: absolute;
   width: 187px;
-  top: 333px;
+  top: 400px;
   right: 114px;
   transform: translateY(-50%);
   animation: float 3s ease-in-out infinite;
@@ -127,6 +128,7 @@ body {
   padding: 30px;
   border-radius: 20px;
   width: 85%;
+  margin-top: -161px;
   transition: transform 0.3s box-shadow 0.3s;
 }
 
@@ -324,8 +326,8 @@ body {
 
 .whatsapp-button img,
 .whatsapp-float img {
-  width: 110px;
-  border-radius: 4%;
+  width: 181px;
+  border-radius: 40%;
   padding: 10px;
   box-shadow: 0 0 15px rgba(10, 190, 40, 0.6);
   transition: 0.3s;
