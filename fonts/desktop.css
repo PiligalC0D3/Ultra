@@ -1,63 +1,54 @@
-
-
 /* ===== Responsividade para Desktop ===== */
 @media (min-width: 1024px) {
 
   body {
-    font-size: 18px; /* aumenta levemente o texto */
+    font-size: 18px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    scroll-behavior: smooth;
   }
 
   header, section, footer {
-    max-width: 1200px; /* limita o conteúdo centralizado */
-    margin: 0 auto;    /* centraliza tudo na tela */
+    max-width: 1200px;
+    width: 100%;
+    margin: 0 auto;
+    text-align: center;
   }
 
-  /* Exemplo de imagem */
   img {
     max-width: 100%;
     height: auto;
     object-fit: cover;
+    margin: 0 auto;
+    display: block;
   }
 
-  /* Layout de colunas (exemplo) */
-  .container {
-    display: flex;
-    flex-wrap: nowrap;
-    align-items: center;
-    justify-content: space-between;
-    gap: 2rem;
-  }
-
-  /* Ajuste de botões */
   button, .btn {
     padding: 1rem 2rem;
     font-size: 1.1rem;
     cursor: pointer;
+    margin: 1rem auto;
+    display: block;
   }
 
-  /* Títulos maiores */
-  h1 {
-    font-size: 2.5rem;
+  h1, h2 {
+    text-align: center;
+    margin: 1rem 0;
   }
 
-  h2 {
-    font-size: 2rem;
-  }
-
-  /* Espaçamento geral */
   section {
     padding: 4rem 0;
+    opacity: 0;
+    transform: translateY(50px);
+    transition: opacity 0.8s ease, transform 0.8s ease;
   }
 
-  /* Exemplo para imagem principal */
-  .container-img {
-    height: 500px;
+  /* Animação de entrada ao rolar */
+  section.show {
+    opacity: 1;
+    transform: translateY(0);
   }
-
-  .container-img img {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-  }
-
 }

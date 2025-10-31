@@ -17,7 +17,7 @@
   <!-- Cabeçalho com Logos -->
   <header class="topo">
     <img src="img/loogo.png" alt="Logo Ultra Academia" class="logoUltra" data-aos="fade-right">
-    <img src="img/brancoOp24.png" alt="Logo 24 Horas" class="logo" data-aos="fade-up">
+    <img src="img/vintequatro.PNG" alt="Logo 24 Horas" class="logo" data-aos="fade-up">
   </header>
 
   <!-- Seção principal -->
@@ -100,6 +100,18 @@
   AOS.init({
     duration: 1200, // duração da animação (ms)
     once: true, // anima apenas uma vez
+  });
+</script>
+
+<script>
+  const sections = document.querySelectorAll("section");
+  window.addEventListener("scroll", () => {
+    sections.forEach(sec => {
+      const rect = sec.getBoundingClientRect();
+      if (rect.top < window.innerHeight - 100) {
+        sec.classList.add("show");
+      }
+    });
   });
 </script>
 
