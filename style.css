@@ -130,6 +130,8 @@ body {
   width: 85%;
   margin-top: -161px;
   transition: transform 0.3s box-shadow 0.3s;
+  
+  
 }
 
 .preco-ultra:hover {
