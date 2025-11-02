@@ -5,12 +5,10 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Ultra Academia</title>
   <link rel="stylesheet" href="style.css">
-  <link rel="stylesheet" href="desktop.css"
+  <link rel="stylesheet" href="desktop.css">
   <!-- AOS (Animate On Scroll) -->
-<link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
-
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 </head>
-
 
 <body>
 
@@ -24,22 +22,20 @@
   <section class="hero">
     <img src="img/fernanda3.jpg" alt="Mulher sorrindo na academia" class="hero-img" data-aos="fade-right">
     <img src="img/ative.png" alt="Minha imagem sem fundo" class="ative" data-aos="fade-right">
-
-  
   </section>
 
   <!-- Plano Goldpró -->
   <section class="plano">
     <img src="img/preco.png" alt="Preço ultra" class="preco-ultra" data-aos="zoom-in">
   </section>
-   <a href="https://wa.me/556593241568" class="btn-matricula">MATRICULE-SE</a>
+  <a href="https://wa.me/556593241568" class="btn-matricula">MATRICULE-SE</a>
 
   <!-- Motivos -->
   <section class="motivos">
     <img src="img/motivos.png" alt="Motivos para escolher a Ultra Academia" class="motivos-img" data-aos="fade-up">
-    </div>
   </section>
 
+  <!-- Imagem Academia -->
   <section class="section-imagem-academia">
     <img src="img/frenteAcademia.png" alt="Interior da academia" class="academia-img" data-aos="fade-right">
   </section>
@@ -49,72 +45,65 @@
     <img src="img/localizacao.png" alt="Localização da Ultra Academia" class="local-img" data-aos="zoom-in">
   </section>
 
-  <!-- Formulário -->
-  <section class="formulario">
-    <h7>PREENCHA O FORMULÁRIO E VEM SER ULTRA!</h7>
-    <form>
-      <input type="text" placeholder="Digite seu nome" required>
-      <input type="email" placeholder="Digite seu e-mail" required>
-      <input type="tel" placeholder="Digite seu WhatsApp" required>
-      <button type="submit">QUERO SER ULTRA</button>
-    </form>
-  </section>
+  <!-- LISTA VIP -->
+<section class="vip" data-aos="fade-up">
+  <a href="URL_DE_REDIRECIONAMENTO" target="_blank" class="listaVip-link">
+    <img src="img/listaVip.PNG" alt="Lista Ultra Academia" class="listaVip">
+  </a>
+  <a href="URL_DE_REDIRECIONAMENTO" target="_blank" class="btn-vip">ENTRAR PARA A LISTA VIP 🔥</a>
+</section>
+
 
   <!-- Estrutura -->
   <section class="estrutura">
     <img src="img/aparelhosAcademia.png" alt="Academia Ultra" data-aos="zoom-in" class="aparelhosAcademia">
-    <img src="img/climatizado.png " alt="Ambiente climatizado" class="climatizado" data-aos="fade-up"> 
-    <div class="whatsapp-container">
-      
-    </div>
+    <img src="img/climatizado.png" alt="Ambiente climatizado" class="climatizado" data-aos="fade-up"> 
 
     <div>
-       <img src="img/facial.JPG" alt="foto-mulher" class="facial" data-aos="fade-up">
+      <img src="img/facial.JPG" alt="foto-mulher" class="facial" data-aos="fade-up">
     </div>
+
     <img src="img/reconhecimento.png" class="reconhecimento" data-aos="fade-right">
   </section>
 
   <!-- Final -->
   <section class="final">
-    <img src="/img/vamos.png" alt="Vamos ser Ultra Academia" class="vamos-ultra" data-aos="zoom-in">
-    <a href="https://wa.me/556593241568" class="btn-matricula2">MATRICULE-SE
-      
-    </a>
+    <img src="img/vamos.png" alt="Vamos ser Ultra Academia" class="vamos-ultra" data-aos="zoom-in">
+    <a href="https://wa.me/556593241568" class="btn-matricula2">MATRICULE-SE</a>
   </section>
-
-  
 
   <!-- Botão Flutuante WhatsApp -->
   <a href="https://wa.me/556593241568" class="whatsapp-button" target="_blank">
-  <img src="img/wpp.PNG" alt="WhatsApp">
-</a>
+    <img src="img/wpp.PNG" alt="WhatsApp">
+  </a>
 
-<footer class="footer">
-  <p>&copy; 2025 Ultra Academia. Todos os direitos reservados.</p>
-  <p>Desenvolvido por: <span> <a href="https://gopublisee.com.br/">Go Publisee</a></span></p>
-</footer>
+  <!-- Footer -->
+  <footer class="footer">
+    <p>&copy; 2025 Ultra Academia. Todos os direitos reservados.</p>
+    <p>Desenvolvido por: <span><a href="https://gopublisee.com.br/">Go Publisee</a></span></p>
+  </footer>
 
-<!-- Script do AOS -->
-<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
-<script>
-  AOS.init({
-    duration: 1200, // duração da animação (ms)
-    once: true, // anima apenas uma vez
-  });
-</script>
-
-<script>
-  const sections = document.querySelectorAll("section");
-  window.addEventListener("scroll", () => {
-    sections.forEach(sec => {
-      const rect = sec.getBoundingClientRect();
-      if (rect.top < window.innerHeight - 100) {
-        sec.classList.add("show");
-      }
+  <!-- Script do AOS -->
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <script>
+    AOS.init({
+      duration: 1200,
+      once: true,
     });
-  });
-</script>
+  </script>
 
+  <!-- Script Scroll -->
+  <script>
+    const sections = document.querySelectorAll("section");
+    window.addEventListener("scroll", () => {
+      sections.forEach(sec => {
+        const rect = sec.getBoundingClientRect();
+        if (rect.top < window.innerHeight - 100) {
+          sec.classList.add("show");
+        }
+      });
+    });
+  </script>
 
 </body>
 </html>

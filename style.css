@@ -6,9 +6,9 @@
   font-family: "Poppins", sans-serif;
 }
 
-  html {
-    font-size: 100%;
-  }
+html {
+  font-size: 100%;
+}
 
 body {
   background-color: #c2338f;
@@ -19,14 +19,13 @@ body {
   font-family: "Gotham", sans-serif;
 }
 
+/* ===== Cabeçalho ===== */
 header.topo {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 0 0px;
-  
-  }
-
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 0px;
+}
 
 /* ===== Animações globais ===== */
 .fade-in {
@@ -42,17 +41,7 @@ header.topo {
   }
 }
 
-
-/* ===== Cabeçalho ===== */
-.topo {
-  display: flex;
-  
-  align-items: center;
-  gap: 20px;
-  padding: 19px 89px;
-  animation: fadeInUp 1s ease forwards;
-}
-
+/* ===== Logos ===== */
 .logo {
   height: 50px;
   margin-left: 60px;
@@ -79,12 +68,10 @@ header.topo {
 
 /* ===== Hero ===== */
 .hero {
-  text-align: relative;
   text-align: center;
-  overflow: hidden; /* Para garantir que a imagem não ultrapasse os limites do contêiner */
+  overflow: hidden;
   margin: 0 auto;
   width: 100%;
-  
 }
 
 .hero-img {
@@ -94,7 +81,7 @@ header.topo {
   animation: fadeInUp 1.2s ease forwards;
   transition: transform 0.5s;
   margin-left:-106px;
-  clip-path:polygon(0 15%, 100% 27%, 105% 76%, 0 57%);
+  clip-path: polygon(0 15%, 100% 27%, 105% 76%, 0 57%);
   margin-top: -122px;
 }
 
@@ -109,7 +96,7 @@ header.topo {
 }
 
 /* ===== Imagem Ative ===== */
-.ative {    /* Estilização da imagem "Ative-se" */
+.ative {
   position: absolute;
   width: 187px;
   top: 400px;
@@ -135,9 +122,7 @@ header.topo {
   border-radius: 20px;
   width: 85%;
   margin-top: -161px;
-  transition: transform 0.3s box-shadow 0.3s;
-  
-  
+  transition: transform 0.3s, box-shadow 0.3s;
 }
 
 .preco-ultra:hover {
@@ -158,7 +143,7 @@ header.topo {
   box-shadow: 0 0 10px rgba(255, 77, 166, 0.3);
 }
 
-.btn-matricula:hover
+.btn-matricula:hover,
 .btn-matricula2:hover {
   background: #fff;
   color: #e93080;
@@ -169,11 +154,29 @@ header.topo {
   margin-top: -55px;
   margin-left: -78px;
 }
-.academia-img {           /* Estilização da imagem da academia 1*/
+
+/* ===== Imagens Academia ===== */
+.academia-img {
   display: block;
   width: 117%;
   border-radius: 0;
-  clip-path:polygon(0 1%, 100% 18%, 105% 85%, 0 70%);
+  clip-path: polygon(0 1%, 100% 18%, 105% 85%, 0 70%);
+}
+
+.academia-img {
+  width: 100%;
+  max-width: 100%;
+  height: 416px;
+  object-fit: cover;
+  display: block;
+  transition: transform 0.5s ease;
+  overflow: hidden;
+  position: relative;
+  object-position: center;
+}
+
+.academia-img:hover {
+  transform: scale(1.03);
 }
 
 /* ===== Motivos ===== */
@@ -188,23 +191,6 @@ header.topo {
   box-shadow: 0 0 25px rgba(255, 77, 166, 0.5);
 }
 
-/* ===== Academia ===== */   /* Estilização da imagem da academia 2*/
-.academia-img {
-  width: 100%;
-  max-width: 100%;
-  height: 416px;
-  object-fit: cover;
-  display: block;
-  transition: transform 0.5s ease;
-  overflow: hidden;
-  position: relative;
-  object-position: center;
-}
-
-.academia-img:hover { 
-  transform: scale(1.03);
-}
-
 /* ===== Localização ===== */
 .local {
   width: 90%;
@@ -217,64 +203,74 @@ header.topo {
   margin-top: -77px;
 }
 
-/* ===== Formulário ===== */
-.formulario {
+/* ===== Lista VIP (substituindo formulário) ===== */
+.vip {
   width: 85%;
-  background: #ff4da6;
   margin: 69px auto;
-  padding: 25px;
+  padding: 0;
   border-radius: 20px;
   position: relative;
-  transition:transform 0.4s;
-}
-  
-.formulario:hover {
-  box-shadow: 0 0 25px rgba(255, 77, 166, 0.5);
-  transform: scale(1.02);
+  transition: transform 0.4s, box-shadow 0.4s;
+  display: flex;
+  flex-direction: column; /* <— coloca um embaixo do outro */
+  justify-content: center;
+  align-items: center;
+  margin-top: 0px;
 }
 
-.formulario input {
+.listaVip {
   width: 100%;
-  padding: 12px;
-  border: none;
-  border-radius: 30px;
-  margin: 10px 0;
-  font-size: 1rem;
-  text-align: center;
-}
-
-.formulario button {
-  background: #fff;
-  color: #e93080;
-  border: none;
-  padding: 14px;
-  border-radius: 50px;
-  font-weight: bold;
+  max-width: 300px;
+  border-radius: 15px;
+  transition: transform 0.3s, box-shadow 0.3s;
   cursor: pointer;
-  transition: 0.3s;
-  width: 45%;
-  display: block;
-  position: absolute;
-  left: 50%;
-  transform: translateX(-50%);
-}
-
-.formulario button:hover {
-  background: #a30f4c;
-  color: #000;
-}
-
-/* === imagem aparelos academia futuro carrossel ==== */
-.aparelhosAcademia {
-  width: 100%;
-  border-radius: 0;
-  clip-path:polygon(0 0%, 100% 15%, 100% 100%, 0 83%);
-  margin-left: -1px !important;
-  transition: transform 0.5s ease;
-  height: 416px;
+  animation: pulse 3s infinite;
+  margin-top: -30px;
 }
 
 
+.listaVip:hover {
+  transform: scale(1.05);
+  box-shadow: 0 0 25px rgba(255, 77, 166, 0.5);
+}
+
+@keyframes pulse {
+  0%, 100% { transform: scale(1); }
+  50% { transform: scale(1.05); }
+}
+
+/* ===== BOTÃO LISTA VIP ===== */
+.btn-vip {
+  display: inline-block;
+  background: linear-gradient(45deg, #ff007a, #867245);
+  color: #fff;
+  font-weight: 600;
+  font-size: 1.2rem;
+  padding: 12px 28px;
+  border: none;
+  border-radius: 40px;
+  margin-top: 355px;
+  text-decoration: none;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  box-shadow: 0 0 15px rgba(255, 0, 122, 0.6);
+  transition: all 0.3s ease;
+  animation: pulseVip 1.8s infinite;
+  margin-left: -263;
+
+}
+
+.btn-vip:hover {
+  transform: scale(1.08);
+  box-shadow: 0 0 25px rgba(255, 174, 0, 0.9);
+}
+
+/* Animação pulsante */
+@keyframes pulseVip {
+  0% { box-shadow: 0 0 10px rgba(255, 0, 122, 0.5); }
+  50% { box-shadow: 0 0 25px rgb(134, 120, 87); }
+  100% { box-shadow: 0 0 10px rgba(255, 0, 122, 0.5); }
+}
 
 
 /* ===== Estrutura ===== */
@@ -289,24 +285,19 @@ header.topo {
   transition: transform 0.5s ease;
 }
 
-
+/* ===== Elementos específicos ===== */
 .reconhecimento{ 
   width: 267px !important; 
   margin-top: -124px !important;
   margin-left: -116px !important;
-
 }
 
 .facial {
   width: 100% !important;
-  clip-path:polygon(0 25%, 100% 31%, 105% 82%, 0 70%);
+  clip-path: polygon(0 25%, 100% 31%, 105% 82%, 0 70%);
   margin-top: -129px !important;
   margin-left: -1px !important;
-
-
-
 }
-
 
 .climatizado {
   display: flex;
@@ -345,7 +336,7 @@ header.topo {
 
 .whatsapp-button img:hover,
 .whatsapp-float img:hover {
-  transform: scale(1.1)rotate(10deg);
+  transform: scale(1.1) rotate(10deg);
 }
 
 /* ===== Final ===== */
@@ -376,9 +367,7 @@ header.topo {
   font-weight: 700;
 }
 
-/* ===== Responsividade Mobile First ===== */
-
-/* Tablets grandes */
+/* ===== Responsividade ===== */
 @media (min-width: 769px) {
   .topo {
     justify-content: space-between;
@@ -452,4 +441,3 @@ header.topo {
     font-size: 1rem;
   }
 }
-
