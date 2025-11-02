@@ -24,18 +24,24 @@
   } 
   
 
-  .logoUltra {
-    width: 240px;
-    height: auto;
-    margin-left: 759px;
-    
-  }
+ .logoUltra {
+  width: 240px;
+  height: auto;
+  position: absolute;
+  top: 25px;              /* distância do topo */
+  left: 35%;              /* centraliza horizontalmente */
+  transform: translateX(-50%); /* corrige o centro exato */
+  z-index: 10;
+}
 
-  .logo {
-    width: 160px;
-    height: auto;
-  }
-
+.logo {
+  width: 110px;
+  height: auto;
+  position: absolute;
+  top: 25px;              /* mesma altura da logoUltra */
+  right: 60px;            /* fixa no canto direito */
+  z-index: 10;
+}
   /* ===== Hero Section ===== */
   .hero {
     display: flex;
@@ -56,11 +62,11 @@
   }
 
   .ative {
-    width: 63%;
-    max-width: 541px;
-    animation: float 4s ease-in-out infinite;
-    margin-top: 26px;
-  }
+  width: 572px;
+  max-width: 541px;
+  display: block;
+  margin: 1000px 475px 0px auto; /* centraliza horizontalmente e afasta do topo */
+  animation: float 4s ease-in-out infinite;
 
   @keyframes float {
     0%, 100% { transform: translateY(0px); }
@@ -302,7 +308,7 @@
 
   /* ===== Rodapé ===== */
   footer.footer {
-    background-color: rgba(0, 0, 0, 0.3);
+    
     backdrop-filter: blur(6px); /* efeito vidro */
     color: #fff;
     text-align: center;
@@ -312,7 +318,7 @@
   }
 
   footer.footer a {
-    color: #e93080;
+    color: #b495a3;
     text-decoration: none;
     backdrop-filter: blur(6px); /* efeito vidro */
   }
@@ -349,7 +355,9 @@
 
 /* Animação pulsante */
 @keyframes pulseVip {
-  0% { box-shadow: 0 0 10px rgba(255, 0, 122, 0.5); }
+  0% { box-shadow: 0 0 10px rgba(221, 216, 218, 0.5); }
   50% { box-shadow: 0 0 25px rgb(143, 129, 100); }
   100% { box-shadow: 0 0 10px rgba(255, 0, 122, 0.5); }
 }
+
+
