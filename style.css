@@ -6,12 +6,9 @@
   font-family: "Poppins", sans-serif;
 }
 
-@font-face {
-  font-family: "MinhaFonte";
-  src: url("fonts/Gotham Narrow Ultra.otf") format("truetype");
-  font-weight: normal;
-  font-style: normal;
-}
+  html {
+    font-size: 100%;
+  }
 
 body {
   background-color: #c2338f;
@@ -329,10 +326,13 @@ header.topo {
 .whatsapp-float {
   position: fixed;
   bottom: 20px;
-  right: 20px;
+  right: 5px;
   z-index: 1000;
   cursor: pointer;
   transition: transform 0.3s;
+  display: flex;
+  margin-bottom: 100px;
+  margin-right: -25px;
 }
 
 .whatsapp-button img,
@@ -452,5 +452,4 @@ header.topo {
     font-size: 1rem;
   }
 }
-
 

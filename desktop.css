@@ -21,14 +21,13 @@
     align-items: center;
     padding: 20px 60px;
     z-index: 10;
-    background: rgba(0, 0, 0, 0.3); /* leve transparência */
-    backdrop-filter: blur(6px); /* efeito vidro */
-  }
+  } 
   
 
   .logoUltra {
     width: 240px;
     height: auto;
+    margin-left: 759px;
   }
 
   .logo {
@@ -49,8 +48,8 @@
   .hero-img {
     width: 100%;
     margin-left: auto;
-    margin-top: -249px;
-    clip-path: polygon(0 0, 100% 0, 160% 78%, 0 50%);
+    margin-top: -236px;
+    clip-path: polygon(0 0, 100% 1, 160% 78%, 0 50%);
     box-shadow: 0 0 20px rgba(255, 255, 255, 0.1);
 
   }
@@ -110,7 +109,7 @@
 
 .btn-matricula {
   position: absolute;
-  margin-left: -78px;
+  margin-left: -150px;
   margin-top: -616px;
   align-items: center;
 }
