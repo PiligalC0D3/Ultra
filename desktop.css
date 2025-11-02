@@ -25,20 +25,20 @@
   
 
  .logoUltra {
-  width: 240px;
+  width: 200px;
   height: auto;
   position: absolute;
-  top: 25px;              /* distância do topo */
+  top: 15px;              /* distância do topo */
   left: 35%;              /* centraliza horizontalmente */
   transform: translateX(-50%); /* corrige o centro exato */
   z-index: 10;
 }
 
 .logo {
-  width: 110px;
+  width: 100px;
   height: auto;
   position: absolute;
-  top: 25px;              /* mesma altura da logoUltra */
+  top: 10px;              /* mesma altura da logoUltra */
   right: 60px;            /* fixa no canto direito */
   z-index: 10;
 }
@@ -62,7 +62,7 @@
   }
 
   .ative {
-  width: 572px;
+  width: 303%;
   max-width: 541px;
   display: block;
   margin: 1000px 475px 0px auto; /* centraliza horizontalmente e afasta do topo */
@@ -358,6 +358,4 @@
   0% { box-shadow: 0 0 10px rgba(221, 216, 218, 0.5); }
   50% { box-shadow: 0 0 25px rgb(143, 129, 100); }
   100% { box-shadow: 0 0 10px rgba(255, 0, 122, 0.5); }
-}
-
-
+}}
