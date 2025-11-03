@@ -43,10 +43,11 @@ header.topo {
 
 /* ===== Logos ===== */
 .logo {
-  height: 50px;
-  margin-left: 60px;
+  height: 60px;
+  margin-left: 50px;
   transition: transform 0.4s;
   display: block;
+  margin-right: 10px;
 }
 
 .logo:hover {
@@ -360,6 +361,7 @@ header.topo {
   padding: 20px 10px;
   font-size: 0.9rem;
   margin-top: 40px;
+  
 }
 
 .footer span {
@@ -436,8 +438,18 @@ header.topo {
     font-size: 2rem;
   }
 
+ /* ===== Footer ===== */
   .footer {
-    padding: 25px 20px;
-    font-size: 1rem;
+    padding: 30px 10px;
+  }
+
+  .footer span {
+    color: #ffae00;
+    font-weight: 700;
+  }
+
+  .footer a {
+    color: #fff;
+    font-weight: bold;
   }
 }
