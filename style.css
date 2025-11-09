@@ -44,10 +44,11 @@ header.topo {
 /* ===== Logos ===== */
 .logo {
   height: 60px;
-  margin-left: 50px;
+  margin-left: 356px;
   transition: transform 0.4s;
   display: block;
-  margin-right: 10px;
+  margin-right: 8px;
+  margin-top: -50px;
 }
 
 .logo:hover {
@@ -352,22 +353,27 @@ header.topo {
   animation: fadeInUp 1.2s ease forwards;
 }
 
-/* ===== Footer ===== */
-.footer {
-  width: 100%;
-  background-color: #ff4da6;
-  color: #fff;
-  text-align: center;
-  padding: 20px 10px;
-  font-size: 0.9rem;
-  margin-top: 40px;
-  
-}
+  /* ===== Rodapé ===== */
+  footer.footer {
+    
+    backdrop-filter: blur(6px); /* efeito vidro */
+    color: #fff;
+    text-align: center;
+    padding: 30px 10px;
+    font-size: 0.9rem;
+    border-top: 2px solid #e93080;
+  }
 
-.footer span {
-  color: #ffae00;
-  font-weight: 700;
-}
+  footer.footer a {
+    color: #b495a3;
+    text-decoration: none;
+    backdrop-filter: blur(6px); /* efeito vidro */
+  }
+
+  footer.footer a:hover {
+    text-decoration: underline;
+  }
+
 
 /* ===== Responsividade ===== */
 @media (min-width: 769px) {
