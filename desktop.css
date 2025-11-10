@@ -1,12 +1,5 @@
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-  font-family: "Poppins", sans-serif;
-}
-
-/* ===== Responsividade completa para Desktop ===== */
-@media (min-width: 1024px  ) {
+/* ===== Responsividade completa para Desktop (>=1024px) ===== */
+@media (min-width: 1024px) {
 
   /* ===== Estrutura geral ===== */
   body {
@@ -40,14 +33,13 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    padding: 0px 0;
     width: 100%;
-    
+    padding: 30px 0;
   }
 
-  logo-container {
+  .logo-container {
     position: relative;
-  
+    display: flex;
     justify-content: center;
     align-items: center;
     width: 100%;
@@ -60,47 +52,56 @@
   }
 
   .logo {
-    height: 80px;
-    margin-left: 0px;
-    transition: transform 0.4s;
-    display: block;
+    width: 120px;
+    height: auto;
     position: absolute;
     top: 60px;
     right: 0;
-   ;
+    transition: transform 0.4s;
   }
 
   /* ===== Hero Section ===== */
   .hero {
     display: flex;
-    flex-direction: column;
-    align-items: center;
     justify-content: center;
-    gap: 40px;
-    margin-top: 40px;
+    align-items: center;
+    margin-top: -200px; /* ajuste proporcional */
+    width: 100%;
+  }
+
+  .hero > div {
+    position: relative;
+    width: 100%;
+    max-width: 1200px;
   }
 
   .hero-img {
-    box-shadow: 0 0 0px rgba(255, 255, 255, 0.1);
-    margin-left: 0px;
-    clip-path: polygon(0 0%, 100% 0%, 105% 75%, 0 57%);
-    margin-top: -430px;
+    width: 100%;
+    height: auto;
+    display: block;
+    margin: 0 auto;
   }
 
+  /* ===== Imagem sobreposta (.ative) ===== */
   .ative {
-    width: 530px;
-    animation: float 4s ease-in-out infinite;
-    margin-top: 230px;
-    margin-left: 30%;
-    display: flex;
     position: absolute;
-    margin-right: 50px;
+    width: 25%;        /* proporcional à hero */
+    left: 50%;         
+    top: 50%;          
+    transform: translate(-50%, -50%);
+    animation: float 4s ease-in-out infinite;
+    z-index: 2;
+  }
+
+  @keyframes float {
+    0%, 100% { transform: translate(-50%, -50%) translateY(0); }
+    50% { transform: translate(-50%, -50%) translateY(-10px); }
   }
 
   /* ===== Plano Gold Pró ===== */
   .plano {
     text-align: center;
-    margin-top: 100px;
+    margin-top: 60px;
   }
 
   .preco-ultra {
@@ -108,7 +109,7 @@
     max-width: 100%;
     display: block;
     margin: 0 auto;
-    animation: float 4s ease-in-out infinite;
+    transition: transform 0.3s, box-shadow 0.3s;
   }
 
   .preco-ultra:hover {
@@ -126,7 +127,7 @@
     text-decoration: none;
     transition: all 0.3s ease;
     box-shadow: 0 0 10px rgba(255, 77, 166, 0.3);
-    margin-top: 222%;
+    margin-top: 30px;
   }
 
   .btn-matricula:hover {
@@ -137,7 +138,7 @@
   .motivos {
     display: flex;
     justify-content: center;
-    margin-top: 100px;
+    margin-top: 80px;
   }
 
   .motivos-img {
@@ -160,7 +161,7 @@
   .local {
     display: flex;
     justify-content: center;
-    margin-top: 100px;
+    margin-top: 80px;
   }
 
   .local-img {
@@ -176,25 +177,51 @@
     padding: 50px;
     border-radius: 20px;
     box-shadow: 0 0 25px rgba(255, 255, 255, 0.05);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
   }
 
-  .formulario input,
-  .formulario button {
-    width: 60%;
-    padding: 15px;
-    border-radius: 10px;
-    border: none;
-    font-size: 1rem;
-  }
-
-  .formulario button {
-    background: linear-gradient(rgba(255, 77, 166, 0.3), #e93080);
-    color: white;
+  .listaVip {
+    width: 100%;
+    max-width: 300px;
+    border-radius: 15px;
+    transition: transform 0.3s, box-shadow 0.3s;
     cursor: pointer;
-    font-weight: bold;
-    transition: 0.3s;
-    width: 275px;
-    margin-top: 30px;
+    animation: pulse 3s infinite;
+    margin-top: -30px;
+  }
+
+  @keyframes pulse {
+    0%, 100% { transform: scale(1); }
+    50% { transform: scale(1.05); }
+  }
+
+  .btn-vip {
+    display: inline-block;
+    background: linear-gradient(45deg, #ff007a, #867245);
+    color: #fff;
+    font-weight: 600;
+    font-size: 1.2rem;
+    padding: 12px 28px;
+    border-radius: 40px;
+    margin-top: 20px;
+    text-decoration: none;
+    letter-spacing: 1px;
+    box-shadow: 0 0 15px rgba(255, 0, 122, 0.6);
+    transition: all 0.3s ease;
+    animation: pulseVip 1.8s infinite;
+  }
+
+  @keyframes pulseVip {
+    0% { box-shadow: 0 0 10px rgba(255, 0, 122, 0.5); }
+    50% { box-shadow: 0 0 25px rgb(134, 120, 87); }
+    100% { box-shadow: 0 0 10px rgba(255, 0, 122, 0.5); }
+  }
+
+  .btn-vip:hover {
+    transform: scale(1.08);
+    box-shadow: 0 0 25px rgba(255, 174, 0, 0.9);
   }
 
   /* ===== Estrutura ===== */
@@ -203,7 +230,7 @@
     flex-direction: column;
     align-items: center;
     gap: 40px;
-    margin: 100px 0;
+    margin: 80px 0;
   }
 
   .estrutura img {
@@ -214,7 +241,7 @@
   /* ===== Final ===== */
   .final {
     text-align: center;
-    margin-top: 100px;
+    margin-top: 80px;
   }
 
   .vamos-ultra {
@@ -277,15 +304,5 @@
 
   footer.footer a:hover {
     text-decoration: underline;
-  }
-}
-
-/* ===== Animação float ===== */
-@keyframes float {
-  0%, 100% {
-    transform: translateY(0px);
-  }
-  50% {
-    transform: translateY(-10px);
   }
 }

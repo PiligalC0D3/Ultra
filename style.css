@@ -376,7 +376,7 @@ header.topo {
 
 
 /* ===== Responsividade ===== */
-@media (min-width: 769px) {
+@media (min-width: 768px) {
   .topo {
     justify-content: space-between;
     padding: 30px 50px;
