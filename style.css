@@ -295,7 +295,7 @@ header.topo {
 }
 
 .facial {
-  width: 100% !important;
+  width: 100%;
   clip-path: polygon(0 25%, 100% 31%, 105% 82%, 0 70%);
   margin-top: -129px !important;
   margin-left: -1px !important;
