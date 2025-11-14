@@ -73,11 +73,12 @@
 
   .hero > div {
     width: 100%;
-    max-width: 1200px;
+    max-width: 1400px;
     position: relative;
     display: flex;
     justify-content: center;
     align-items: center;
+    margin-top: -18%;
     
   }
 
@@ -87,14 +88,15 @@
     display: block;
     object-fit: cover;
     margin-left: auto;
+    clip-path: polygon(0 15%, 100% 0%, 105% 76%, 0 57%);
   }
 
   /* ===== Imagem sobreposta (.ative) ===== */
   .ative {
     position: absolute;
-    width: 25%;
+    width: 35%;
     left: 50%;
-    top: 55%; /* sempre um pouco abaixo do centro */
+    top: 50%; /* sempre um pouco abaixo do centro */
     transform: translate(-50%, -50%);
     animation: float 4s ease-in-out infinite;
     z-index: 2;
@@ -108,7 +110,7 @@
   /* ===== Plano Gold Pró ===== */
   .plano {
     text-align: center;
-    margin-top: 60px;
+    margin-top: -45%;
     width: 100%;
   }
 
@@ -130,12 +132,13 @@
     background: #fff;
     color: #e93080;
     font-weight: bold;
-    padding: 15px 75px;
+    padding: 20px 100px;
     border-radius: 50px;
     text-decoration: none;
     transition: all 0.3s ease;
     box-shadow: 0 0 10px rgba(255, 77, 166, 0.3);
-    margin-top: 30px;
+    margin-top: -6%;
+    margin-left: -10%;
   }
 
   .btn-matricula:hover {
@@ -145,15 +148,19 @@
   /* ===== Outras imagens full-width ===== */
   .motivos-img,
   .academia-img,
-  .local-img,
   .estrutura img,
   .facial {
     width: 100vw; /* sempre ocupando largura total da tela */
     max-width: none;
     height: auto;
     display: block;
+    ;
   }
 
+  .local {
+    margin-top: -15%;
+    
+  }
   /* ===== Conteúdo central limitado ===== */
   .vip, .final {
     max-width: 1200px;
