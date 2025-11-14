@@ -1,5 +1,5 @@
 /* ===== Responsividade completa para Desktop (>=1024px) ===== */
-@media (min-width: 1024px) {
+@media screen and (min-width: 1024px) {
 
   /* ===== Estrutura geral ===== */
   body {
@@ -7,25 +7,26 @@
     line-height: 1.6;
     background-color: #c2338f;
     overflow-x: hidden;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+    width: 100%;
+    margin: 0;
+    padding: 0;
   }
 
   section {
-    width: 100%;
-    max-width: 1200px;
+    width: 100;
+    max-width: none; /* conteúdo central limitado */
+    margin: 0;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
     text-align: center;
-  }
+    padding: 0;  }
 
   img {
-    max-width: 100%;
-    height: auto;
     display: block;
+    max-width: auto;
+    height: auto;
   }
 
   /* ===== Header ===== */
@@ -62,32 +63,38 @@
 
   /* ===== Hero Section ===== */
   .hero {
+    position: relative;
+    width: 100%;
+    margin-top: 80px;
     display: flex;
     justify-content: center;
     align-items: center;
-    margin-top: -200px; /* ajuste proporcional */
-    width: 100%;
   }
 
   .hero > div {
-    position: relative;
     width: 100%;
     max-width: 1200px;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
   }
 
   .hero-img {
-    width: 100%;
+    width: 100vw; /* ocupa toda largura da tela */
     height: auto;
     display: block;
-    margin: 0 auto;
+    object-fit: cover;
+    margin-left: auto;
   }
 
   /* ===== Imagem sobreposta (.ative) ===== */
   .ative {
     position: absolute;
-    width: 25%;        /* proporcional à hero */
-    left: 50%;         
-    top: 50%;          
+    width: 25%;
+    left: 50%;
+    top: 55%; /* sempre um pouco abaixo do centro */
     transform: translate(-50%, -50%);
     animation: float 4s ease-in-out infinite;
     z-index: 2;
@@ -102,15 +109,15 @@
   .plano {
     text-align: center;
     margin-top: 60px;
+    width: 100%;
   }
 
   .preco-ultra {
-    width: 800px;
-    max-width: 100%;
+    width: 100%;
+    max-width: 800px;
+    margin: 40px auto;
     display: block;
-    margin: 0 auto;
     transition: transform 0.3s, box-shadow 0.3s;
-    margin-top: -50%;
   }
 
   .preco-ultra:hover {
@@ -128,53 +135,33 @@
     text-decoration: none;
     transition: all 0.3s ease;
     box-shadow: 0 0 10px rgba(255, 77, 166, 0.3);
-    margin-top: 1100px;
-    margin-right: -10%;
+    margin-top: 30px;
   }
 
   .btn-matricula:hover {
     transform: scale(1.05);
   }
 
-  /* ===== Motivos ===== */
-  .motivos {
-    display: flex;
-    justify-content: center;
-    margin-top: 80px;
+  /* ===== Outras imagens full-width ===== */
+  .motivos-img,
+  .academia-img,
+  .local-img,
+  .estrutura img,
+  .facial {
+    width: 100vw; /* sempre ocupando largura total da tela */
+    max-width: none;
+    height: auto;
+    display: block;
   }
 
-  .motivos-img {
-    width: 80%;
-    max-width: 900px;
+  /* ===== Conteúdo central limitado ===== */
+  .vip, .final {
+    max-width: 1200px;
+    margin: 80px auto;
   }
 
-  /* ===== Academia ===== */
-  .section-imagem-academia {
-    display: flex;
-    justify-content: center;
-    margin-top: 80px;
-  }
-
-  .academia-img {
-    width: 100%;
-  }
-
-  /* ===== Localização ===== */
-  .local {
-    display: flex;
-    justify-content: center;
-    margin-top: 80px;
-  }
-
-  .local-img {
-    width: 60%;
-    max-width: 700px;
-  }
-
-  /* ===== VIP ===== */
   .vip {
     text-align: center;
-    margin-top: 60px;
     background: rgba(255, 255, 255, 0.05);
     padding: 50px;
     border-radius: 20px;
@@ -191,7 +178,7 @@
     transition: transform 0.3s, box-shadow 0.3s;
     cursor: pointer;
     animation: pulse 3s infinite;
-    margin-top: -30px;
+    margin-top: 20px;
   }
 
   @keyframes pulse {
@@ -226,24 +213,11 @@
     box-shadow: 0 0 25px rgba(255, 174, 0, 0.9);
   }
 
-  /* ===== Estrutura ===== */
-  .estrutura {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    gap: 40px;
-    margin: 80px 0;
-  }
-
-  .estrutura img {
-    width: 100%;
-    
-  }
-
   /* ===== Final ===== */
   .final {
     text-align: center;
     margin-top: 80px;
+    width: 100%;
   }
 
   .vamos-ultra {
@@ -269,19 +243,6 @@
   .btn-matricula2:hover {
     transform: scale(1.05);
   }
-
-  .facial {
-  width: 100%;
-  clip-path: polygon(0 25%, 100% 31%, 105% 82%, 0 70%);
-  margin-top: -35%;
-  display: flex;
-  }
-  
-  .reconhecimento{ 
-  width: 47% !important; 
-  margin-top: -40% !important;
-  margin-left: -116px !important;
-}
 
   /* ===== WhatsApp ===== */
   .whatsapp-button {
@@ -319,4 +280,5 @@
   footer.footer a:hover {
     text-decoration: underline;
   }
+
 }
