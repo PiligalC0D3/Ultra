@@ -35,7 +35,7 @@
     justify-content: center;
     align-items: center;
     width: 100%;
-    padding: 30px 0;
+    
   }
 
   .logo-container {
@@ -154,13 +154,20 @@
     max-width: none;
     height: auto;
     display: block;
-    ;
-  }
-
-  .local {
-    margin-top: -15%;
     
   }
+    .facial {
+    margin-top: -40% !important;
+    }
+  .local {
+    margin-top: -15%;
+  }
+
+  .reconhecimento {
+    margin-top: -35% !important;
+    width: 65% !important;
+  }
+
   /* ===== Conteúdo central limitado ===== */
   .vip, .final {
     max-width: 1200px;
@@ -176,6 +183,7 @@
     display: flex;
     flex-direction: column;
     align-items: center;
+    margin-top: -10%;;
   }
 
   .listaVip {
@@ -220,6 +228,11 @@
     box-shadow: 0 0 25px rgba(255, 174, 0, 0.9);
   }
 
+  .climatizado {
+  display: flex;
+  width: 50% !important;
+  margin-left: -3% !important;
+  }
   /* ===== Final ===== */
   .final {
     text-align: center;
@@ -232,6 +245,7 @@
     max-width: 800px;
     display: block;
     margin: 0 auto;
+    margin-top: -10% ;
   }
 
   .btn-matricula2 {
