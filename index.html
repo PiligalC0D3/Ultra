@@ -108,5 +108,35 @@
     });
   </script>
 
+<script src="js/trocaImagens.js"></script>
+
+<script>
+  document.addEventListener("DOMContentLoaded", () => {
+    const imgElement = document.querySelector(".aparelhosAcademia");
+
+    const imagens = [
+      "img/aparelhosAcademia.png",
+      "img/elastica.png",
+      "img/bike.png",
+      "img/academia.png",
+    ];
+
+    let index = 0;
+
+    setInterval(() => {
+      // fade-out
+      imgElement.style.opacity = 0;
+
+      setTimeout(() => {
+        index = (index + 1) % imagens.length;
+        imgElement.src = imagens[index];
+
+        // fade-in
+        imgElement.style.opacity = 1;
+      }, 800); // tempo do fade-out antes de trocar
+    }, 5000); // troca a cada 5s
+  });
+</script>
+
 </body>
 </html>

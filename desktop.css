@@ -154,8 +154,14 @@
     max-width: none;
     height: auto;
     display: block;
-    
   }
+
+    .motivos-img{
+      width:100% !important;
+      margin-left: 20% !important;
+
+    }
+
     .facial {
     margin-top: -40% !important;
     }
